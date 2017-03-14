@@ -1,0 +1,24 @@
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+<body>
+    <h1>My Task</h1>
+    <?php foreach ($task as $task) : ?>
+
+        <li>
+
+            <?php if ($task->complete) ; ?>
+                <strike><?= $task->descritpion; ?></strike>
+            <?php else : ?>
+                <?php= $task->descritpion; ?>
+            <?php endif; ?>
+        </li>
+    <? php endforeach; ?>
+    
+
+</body>
+</html>
